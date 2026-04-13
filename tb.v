@@ -135,7 +135,7 @@ module tb(
     .o_data(outData),
     .i_data_ready(1'b1),
     //interrupt
-    .o_intr(intr)
+    .o_intr(intr)  ///output
 );   
     
 endmodule

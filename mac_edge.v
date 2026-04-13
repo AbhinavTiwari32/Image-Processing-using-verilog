@@ -46,6 +46,7 @@ wire [21:0] convolved_data_int;
 reg  convolved_data_int_valid;
 initial
 begin
+    // kernel
     kernel1[0]= 1;
     kernel1[1]= 0;
     kernel1[2]= -1;

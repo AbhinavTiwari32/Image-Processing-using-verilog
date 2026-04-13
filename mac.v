@@ -82,13 +82,13 @@ end
 //end
 
 
-always @(posedge i_clk)
+always @(posedge i_clk) 
 begin
     if(sumDataValid) begin
         if(sumData - BRIGHTNESS < 0)
             o_convolved_data <= 0;
         else
-            o_convolved_data <= sumData - BRIGHTNESS;
+            o_convolved_data <= sumData - BRIGHTNESS;  // darken
     end
     o_convolved_data_valid <= sumDataValid;
 end
